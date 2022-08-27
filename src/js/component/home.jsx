@@ -13,17 +13,17 @@ const Home = () => {
             return () => clearInterval(interval);
         }, []);
 
-		const prueba= count.toString().split('').reverse()
+		const inputSeconds= count.toString().split('').reverse()
 
 	return (
 		<div className="bg-dark container-fluid d-flex justify-content-center flex-wrap pt-3">
 			<ClockIcon/>
-			<Counter seconds={prueba[5]}/>
-			<Counter seconds={prueba[4]}/>
-			<Counter seconds={prueba[3]}/>
-			<Counter seconds={prueba[2]}/>
-			<Counter seconds={prueba[1]}/>
-			<Counter seconds={prueba[0]}/>
+			<Counter seconds={inputSeconds[5]}/>
+			<Counter seconds={inputSeconds[4]}/>
+			<Counter seconds={inputSeconds[3]}/>
+			<Counter seconds={inputSeconds[2]}/>
+			<Counter seconds={inputSeconds[1]}/>
+			<Counter seconds={inputSeconds[0]}/>
 		</div>
 	)
 };
